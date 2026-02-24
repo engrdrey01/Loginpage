@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ccdcf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    margin: 50px auto;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+.email {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999999;
+    font-size: 18px;
+}
+
+.email input {
+    width: 100%;
+    padding: 12px 40px 12px 40px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+
+}
+
+.password {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.password input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+}
+
+.forgot {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.submit button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.agree {
+    font-size: 15px;
+    color: #666666;
+    margin-bottom: 20px;
+    text-align: left;
+
+}
+
+.agree input {
+    margin-right: 10px;
+}
+
+.sign-up a {
+    text-decoration: none;
+}
+
+.login-container img {
+    width: 70px;
+    margin-bottom: 20px;
+}
