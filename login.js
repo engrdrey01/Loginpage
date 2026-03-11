@@ -14,6 +14,8 @@ const error = document.getElementById("error");
 
 const success = document.getElementById("success");
 
+const loginSuccessful = document.getElementById("loginSuccessful");
+
 
 // Toggle password visibility
 
@@ -49,6 +51,7 @@ form.addEventListener("submit", (e) => {
 
     if (!emailValue.includes("@") || !emailValue.includes(".")) {
         error.textContent = "Please enter a valid email address.";
+        error.style.display = "block";
         return;
     }
 
@@ -56,9 +59,16 @@ form.addEventListener("submit", (e) => {
         error.textContent = "Password must be at least 6 characters long.";
         return;
     }
+    loginSuccessful.style.display = "block";
+    loginSuccessful.style.opacity = 1;
+
+    // fade out the success message after 1 second
+    setTimeout(() => {
+        loginSuccessful.style.display = "none";
+        loginSuccessful.style.opacity = "0";
+    }, 5000);
 
 
-    success.textContent = "Login successful!";
     submit.disabled = true;
 
     setTimeout(() => {
